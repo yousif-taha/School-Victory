@@ -1,0 +1,90 @@
+nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav .container .logo-and-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .container .logo-and-links .nav-logo {
+    color: var(--text-main-color);
+}
+
+nav .container .logo-and-links .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+nav .container .logo-and-links .nav-links li a {
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+nav .container .logo-and-links .nav-links li a:hover {
+    color: var(--button-green-color);
+}
+
+
+nav .container .buttons-side {
+    display: flex;
+    gap: 45px;
+}
+
+nav .container .buttons-side button:nth-child(1) {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--button-green-color);
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+nav .container .buttons-side button:nth-child(1)::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color:var(--button-green-color); 
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+nav .container .buttons-side button:nth-child(1):hover:after{
+    width: 100%;
+}
+
+
+nav .container .buttons-side button:nth-child(2) {
+    background-color: var(--button-green-color);
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav .container .buttons-side button:nth-child(2):hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:992px) {
+    nav .container .logo-and-links .nav-links {
+        display: none;
+    }
+
+    nav .container .buttons-side {
+        display: none;
+    }
+}

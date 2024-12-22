@@ -1,0 +1,221 @@
+.left-rectangle {
+    width: 111.61px;
+    height: 176.96px;
+    background-color: var(--rectangle-color);
+    position: absolute;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+}
+
+.right-rectangle {
+    width: 604.15px;
+    height: 700px;
+    background-color: var(--rectangle-color);
+    position: absolute;
+    border-bottom-left-radius: 100px;
+    right: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:992px) {
+    .left-rectangle {
+        width: 80.61px;
+        height: 120.96px;
+    }
+
+    .right-rectangle {
+        width: 200.15px;
+        height: 300px;
+    }
+}
+
+.hero {
+    margin-top: 50px;/
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero .container .hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.hero .container .hero-title .online {
+    color: var(--button-green-color);
+    font-weight: bold;
+}
+
+.hero .container .hero-title .hero-h1 {
+    color: var(--text-main-color);
+    font-size: 58px;
+}
+
+.hero .container .hero-title .hero-desc {
+    font-size: 20px;
+    color: var(--text-secondary-color);
+}
+
+.hero .container .hero-title .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero .container .hero-title .hero-buttons button:nth-child(1) {
+    padding: 15px 40px;
+    background-color: var(--button-green-color);
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.hero .container .hero-title .hero-buttons button:nth-child(1):hover {
+    opacity: 0.7;
+}
+
+.hero .container .hero-title .hero-buttons button:nth-child(2) {
+    padding: 15px 40px;
+    background-color: transparent;
+    color: var(--button-green-color);
+    border: var(--button-green-color) solid 1px;
+    outline: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+
+.hero .container .hero-title .hero-buttons button:nth-child(2):hover {
+    background-color: var(--button-green-color);
+    color: #ffffff;
+    border: transparent;
+}
+
+.hero .container .hero-image-side {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.hero .container .hero-image-side img:not(img:nth-child(1)) {
+    position: absolute;
+}
+
+.hero .container .hero-image-side img:nth-child(2) {
+    top: 10%;
+    right: 0;
+}
+
+.hero .container .hero-image-side img:nth-child(3) {
+    top: 40%;
+    left: -2%;
+}
+
+.hero .container .hero-image-side img:nth-child(4) {
+    bottom: 12%;
+    right: 10%;
+}
+
+.hero .container .hero-image-side img:nth-child(5) {
+    top: 0;
+    left: -0.2%;
+}
+
+.hero .container .hero-image-side img:nth-child(6) {
+    bottom: 14%;
+    left: -5%;
+}
+
+
+.hero .container .hero-image-side img:nth-child(7) {
+    z-index: -1;
+    left: 15%;
+    bottom: 20%;
+}
+.hero .container .hero-image-side img:nth-child(8){
+    bottom: 5%;
+    right: 40%;
+    width: 60px;
+    height: 60px;
+
+}
+
+
+
+@media screen and (max-width:992px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .hero .container .hero-image-side {
+        flex-direction: column;
+    }
+
+    .hero .container .hero-image-side img:nth-child(1) {
+        width: 300px;
+    }
+    
+    .hero .container .hero-image-side img:nth-child(2) {
+        width: 40px;
+    }
+
+
+    .hero .container .hero-image-side img:nth-child(3) {
+        width: 30px;
+    }
+
+    .hero .container .hero-image-side img:nth-child(4) {
+    left: 55%;
+    width: 25vw;
+    bottom: 20%;
+    }
+
+    .hero .container .hero-image-side img:nth-child(5) {
+        width: 90px;
+    }
+
+    .hero .container .hero-image-side img:nth-child(6) {
+        top: 55%;
+        width: 35vw;
+    }
+
+    .hero .container .hero-image-side img:nth-child(7) {
+        width: 250px;
+    }
+
+    .hero .container .hero-image-side img:nth-child(8) {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero .container .hero-title .hero-h1 {
+        font-size: 30px;
+    }
+
+    .hero .container .hero-title .hero-desc {
+        font-size: 13px;
+    }
+
+    .hero .container .hero-title .hero-buttons button:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .hero .container .hero-title .hero-buttons button:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .hero .container .hero-title .hero-buttons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,97 @@
+.advices{
+    margin-top: 100px;
+
+}
+.advices .container{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.advices .container .advaices-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.advices .container .advaices-heading h5{
+    color: var(--button-green-color);
+    font-weight: bold;
+}
+
+.advices .container .advaices-heading h1{
+    color: var(--text-main-color);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.advices .container .advaices-heading p{
+    color: var(--text-secondary-color);
+    font-size: 14px;
+}
+
+.advices .container .advaices-cards{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+
+.advices .container .advaices-cards .advice-card{
+    padding: 35px 40px;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    transition: 0.4s ease-in-out all;
+    border-radius: 10px;
+}
+.advices .container .advaices-cards .advice-card h5{
+    color: var(--text-main-color);
+    transition: 0.4s ease-in-out all;
+}
+
+.advices .container .advaices-cards .advice-card hr{
+    width: 50px;
+    border-color: #E74040;
+    transition: 0.4s ease-in-out all;
+    ;
+}
+.advices .container .advaices-cards .advice-card p{
+    color: var(--text-secondary-color);
+    font-size: 14px;
+    transition: 0.4s ease-in-out all;
+}
+
+
+.advices .container .advaices-cards .advice-card:hover{
+    background-color: var(--button-green-color);
+
+}
+.advices .container .advaices-cards .advice-card:hover h5{
+    color: #FFFFFF;
+
+}
+.advices .container .advaices-cards .advice-card:hover p{
+    color: #FFFFFF;;
+
+}
+.advices .container .advaices-cards .advice-card:hover hr{
+    border-color: #FFFFFF;;
+
+}
+@media screen  and (max-width:992px) {
+    .advices .container .advaices-cards{
+        flex-wrap:wrap;
+    }
+    .advices .container .advaices-heading h1{
+        font-size: 20px;
+    }
+    
+    .advices .containar .advaices-heading p{
+        font-size: 12px;
+    }
+}
